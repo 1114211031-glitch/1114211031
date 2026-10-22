@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main {
+        height: 300px;
+        width: 300px;
+        /* 第一個顏色：螢幕小於 768px 時 */
+        background-color: orange; 
+    }
+
+    /* 768px 以上 */
+    @media screen and (min-width: 768px) {
+        #main {
+            /* 第二個顏色：螢幕大於 768px 時 */
+            background-color: green;
+        }
+    }
+
+    /* 1200px 以上 */
+    @media screen and (min-width: 1200px) {
+        #main {
+            /* 第三個顏色：螢幕大於 1200px 時 */
+            background-color: blue;
+        }
+    }
+</style>
+<body>
+    <div id="main">Hello</div>
+</body>
+</html>
